@@ -11,6 +11,10 @@
     <p id="var"></p>
     <p id="var2"></p>
 
+    <p id="sub"></p>
+    <p id="mult"></p>
+    <p id="div"></p>
+
     <script>
       document.getElementById("myH").innerHTML = "JavaScript Comments";
 
@@ -18,16 +22,27 @@
 
       document.getElementById("myP").innerHTML = "My First Paragraph";
 
-      var a, b, sum;
+      var a, b, sum, sub, mult, div;
 
-      var a = 515;
-      var b = 15;
+      a = 515;
+      b = 15;
+
+      sum = a + b;
+      sub = a - b;
+      mult = a * b;
+      div = a / b;
 
       var sum = a + b;
 
       document.getElementById("var").innerHTML =
         "Sum of " + a + "+" + b + "=" + sum;
       document.getElementById("var2").innerHTML = `Sum of ${a} + ${b} = ${sum}`;
+
+      document.getElementById("sub").innerHTML = `Sub of ${a} - ${b} = ${sub}`;
+      document.getElementById(
+        "mult"
+      ).innerHTML = `Mult of ${a} X ${b} = ${mult}`;
+      document.getElementById("div").innerHTML = `Div of ${a} / ${b} = ${div}`;
     </script>
   </body>
 </html>
