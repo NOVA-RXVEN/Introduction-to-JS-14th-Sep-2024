@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="myH"></h1>
+    <p id="myP"></p>
+
+    <h1>Simple Calculator</h1>
+    <br />
+    <h2>Sum of 2 numbers</h2>
+    <p id="sum"></p>
+    <h2>Sub of 2 numbers</h2>
+    <p id="sub"></p>
+    <h2>Mult of 2 numbers</h2>
+    <p id="mult"></p>
+    <h2>Div of 2 numbers</h2>
+    <p id="div"></p>
+
+    <script>
+      var sum, sub, mult, div;
+
+      a = 30;
+      b = 27;
+
+      sum = a + b;
+      sub = a - b;
+      mult = a * b;
+      div = a / b;
+
+      var sum = a + b;
+
+      document.getElementById("sum").innerHTML = `${a} + ${b} = ${sum}`;
+
+      document.getElementById("sub").innerHTML = `${a} - ${b} = ${sub}`;
+
+      document.getElementById("mult").innerHTML = `${a} X ${b} = ${mult}`;
+
+      document.getElementById("div").innerHTML = `${a} / ${b} = ${div}`;
+    </script>
+  </body>
+</html>
